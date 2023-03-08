@@ -1,22 +1,30 @@
-﻿class Animal
+﻿using System.Runtime.CompilerServices;
+
+class Animal
 {
     public string name;
 
-    public void Move()
+    static void Main(string[] args)
+    {
+        Sleep();
+        Move();
+    }
+
+    static void Move()
     {
         Console.WriteLine("Move");
     }
 
-    public void Sleep()
+    static void Sleep()
     {
         Console.WriteLine("Sleep");
     }
-    public Animal()
+    static Animal()
     {
-
+        
     }
     public Animal(string name)
     {
-
+        this.name = "Baguera";
     }
 }
