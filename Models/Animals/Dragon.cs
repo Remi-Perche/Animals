@@ -6,22 +6,27 @@ namespace Animals.Models.Animals
     {
         public Dragon()
         {
-            this.name = string.Empty;
-            this.dragonName = "Dragon";
+            this.name = "Dragon";
         }
-        public string dragonName { get; set; }
+        public Dragon(string dragonName, string rarity, int ID)
+        {
+            this.name = dragonName;
+            this.rarity = rarity;
+            this.Id = ID;
+        }
+
         public new string name { get; set; }
         public void Moove()
         {
-            Console.WriteLine($"Le {dragonName} se déplace");
+            Console.WriteLine($"Le {name} se déplace");
         }
         public override void Move()
         {
-            Console.WriteLine($"Le {dragonName} vole");
+            Console.WriteLine($"Le {name} vole");
         }
         public new void Sleep()
         {
-            Console.WriteLine($"Le {dragonName} dort biiiiiiiiiien");
+            Console.WriteLine($"Le {name} dort biiiiiiiiiien");
         }
     }
 }

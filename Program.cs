@@ -5,13 +5,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        Griffin griffin = new Griffin();
-        griffin.Sleep();
-        griffin.Move();
-        Console.WriteLine(griffin.name);
-
-        Dragon dragon = new Dragon();
-        dragon.Sleep();
-        dragon.Move();
+        /*string[] dogs = { "Jack", "Medor", "Toby", "Snow", "Milou" };
+        IEnumerable<string> notSnow =
+            from dog in dogs
+            where dog != "Snow"
+            select dog;
+        
+        foreach (string dog in notSnow)
+        {
+            Console.WriteLine(dog);
+        }*/
+        Dragon smaug = new Dragon("Smaug", "Legendary", 1);
+        Griffin Morpheus = new Griffin("Morpheus", "Rare", 2);
     }
 }

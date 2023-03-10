@@ -3,17 +3,22 @@
     class Griffin : Animal
     {
         public Griffin() {
-            this.griffinName = "Griffin";
+            this.name = "Griffin";
         }
-        public string griffinName { get; set; }
+        public Griffin(string name, string rarity, int ID)
+        {
+            this.name = name;
+            this.rarity = rarity;
+            this.Id = ID;
+        }
         public override void Move()
         {
-            Console.WriteLine($"Le {griffinName} court");
+            Console.WriteLine($"Le {name} court");
         }
 
         public new void Sleep()
         {
-            Console.WriteLine($"Le {griffinName} dort profondement");
+            Console.WriteLine($"Le {name} dort profondement");
         }
 
         
